@@ -1,71 +1,32 @@
+/* Задаем цвет фона для всей страницы */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Стили для заголовка */
+.main-header {
     text-align: center;
-    padding-top: 50px;
+    padding: 50px;
+    color: white;
+    background-color: #4CAF50; /* Зеленый цвет */
 }
 
-h1 {
-    color: #007bff; /* Синий цвет */
-    margin-bottom: 20px;
-}
-
-.buttons-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Отступ между кнопками */
-    margin-top: 40px;
-}
-
-.btn-download {
-    padding: 12px 25px;
-    border-radius: 999px; /* Делает кнопки круглыми */
-    font-weight: bold;
-    text-decoration: none;
-    color: white !important;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.btn-ios { background-color: #007aff; } /* Цвет Apple */
-.btn-android { background-color: #3ddc84; } /* Цвет Android */
-
-.btn-download:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-}
-/* Стили для блока "Преимущества" */
-.features {
-    padding: 50px 0;
-    background-color: #ffffff; /* Белый фон для контраста */
-}
-.features h2 {
+/* Стили для основного текста */
+main {
+    padding: 20px;
     text-align: center;
-    margin-bottom: 40px;
-    color: #007bff;
-    font-size: 2em;
 }
-.feature-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px; /* Отступ между карточками */
-    flex-wrap: wrap;
-}
-.feature-card {
-    flex-basis: calc(33% - 20px); /* Три карточки в ряд */
-    min-width: 280px;
+
+/* Стили для футера (подвала) */
+footer {
     text-align: center;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-.feature-card i {
-    font-size: 2.5em;
-    color: #007bff;
-    margin-bottom: 15px;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
 }
