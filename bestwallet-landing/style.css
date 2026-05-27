@@ -34,3 +34,38 @@ h1 {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
+/* Стили для блока "Преимущества" */
+.features {
+    padding: 50px 0;
+    background-color: #ffffff; /* Белый фон для контраста */
+}
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #007bff;
+    font-size: 2em;
+}
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Отступ между карточками */
+    flex-wrap: wrap;
+}
+.feature-card {
+    flex-basis: calc(33% - 20px); /* Три карточки в ряд */
+    min-width: 280px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.feature-card i {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
